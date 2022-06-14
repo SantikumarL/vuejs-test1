@@ -4,7 +4,7 @@
     <h1>{{ counter.count }}</h1>
     <button @click="increment">+</button>
     <button @click="decrement">-</button>
-    <UserForm @update="addUser" />
+    <UserForm/>
     <ol>
       <li v-for="user in userStore.users" :key="user.uid">
         {{ user.title
